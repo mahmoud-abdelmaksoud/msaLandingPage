@@ -70,6 +70,7 @@
   });
 
   // Mobile Navigation
+
   if ($(".nav-menu").length) {
     var $mobile_nav = $(".nav-menu").clone().prop({
       class: "mobile-nav d-lg-none",
