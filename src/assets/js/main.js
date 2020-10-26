@@ -71,10 +71,11 @@
 
   // Mobile Navigation
 
-  if ($(".nav-menu").length) {
+  if (window.screen.availWidth < 980) {
     var $mobile_nav = $(".nav-menu").clone().prop({
       class: "mobile-nav d-lg-none",
     });
+
     $("body").append($mobile_nav);
     $("body").prepend(
       '<button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>'
